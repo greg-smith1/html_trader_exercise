@@ -1,0 +1,22 @@
+{% extends "homepage.html" %}
+{% block main %}
+        <p>Your net cash HTML Trader earnings so far: {{net_bal}}</p>
+        <p>You also have {{shares}} shares in your portfolio.</p>
+        <p>Your current portfolio is:</p>
+        <table>
+                <tr>
+                   <th>Ticker</th>
+                   <th>Shares</th>
+                   <th>Value</th>
+                </tr>
+                {% for row in list %}
+                <tr>
+                        <td>{{ row[0] }}</td>
+                        <td>{{ row[1] }}</td>
+                        <td>{{ row[2] }}</td>
+                </tr>
+                {% endfor %}
+        </table>
+        <br>
+        <a href="/">Menu</a>
+{% endblock main %}

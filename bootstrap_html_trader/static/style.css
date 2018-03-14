@@ -1,0 +1,14 @@
+table, th, td {
+        border:1px solid white;
+        border-collapse:collapse;
+        padding:9px;
+        text-align: center;
+}
+
+html, body {
+    background-color:black;
+}
+
+p, h2, tr, td, a {
+    color:white;
+}
